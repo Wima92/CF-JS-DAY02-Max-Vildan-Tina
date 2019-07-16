@@ -14,7 +14,6 @@
 
 // document.write( "<br/>");
 // document.write( "<br/>");
-
 //Basic 2
 
 		// function ageCalculator(birthYear, currentYear) {
@@ -26,6 +25,9 @@
 		// var ageAlternative = age--; //calculate alternative age and save it in a variable 
 		
 		// document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+
+// document.write( "<br/>");
+// document.write( "<br/>");
 //Basic 3
 		var date = new Date();
 		var currentYear = date.getFullYear(); 
@@ -39,7 +41,19 @@
 		var ageAlternative = age--;
 		document.write("You are either " + age + " or " + ageAlternative + " years old.");
 
+document.write( "<br/>");
+document.write( "<br/>");
+// Basic 4
+		function radianCalculator(degree) {
+			radian = degree * (Math.PI/180);
+			return radian;
+		}
 
+		var degree = 30;
+		var radian = radianCalculator(degree);
+		
+		console.log(radianCalculator(degree));
+		document.write(degree + " degrees is " + radian + " radians." )
 
 	</script>
 
