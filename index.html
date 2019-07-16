@@ -16,63 +16,74 @@
 // document.write( "<br/>");
 //Basic 2
 
-		// function ageCalculator(birthYear, currentYear) {
-		// 	age = currentYear - birthYear; //define a global variable
-		// 	return age; //save the result
-		// }
+/*
+		function ageCalculator(birthYear, currentYear) {
+			var result = currentYear - birthYear; //calculate the result
+			return result; //save the result
+		}
 		
-		// ageCalculator(1986, 2019); //call the function
-		// var ageAlternative = age--; //calculate alternative age and save it in a variable 
+		var age = ageCalculator(1986, 2019); //call the function
+		var ageAlternative = age--; //calculate alternative age and save it in a variable 
+		//what happens if I put age-- instead of age-1?
+		//what happens if I put --age instead of age-1?
 		
-		// document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+		document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+*/
+
+// // document.write( "<br/>");
+// // document.write( "<br/>");
+// //Basic 3
+// 		var date = new Date();
+// 		var currentYear = date.getFullYear(); 
+		
+
+// 		function ageCalculator(birthYear) {
+// 			age = currentYear - birthYear;
+// 			return age;
+// 		}
+// 		ageCalculator(1986);
+// 		var ageAlternative = age--;
+// 		document.write("You are either " + age + " or " + ageAlternative + " years old.");
 
 // document.write( "<br/>");
 // document.write( "<br/>");
-//Basic 3
-		var date = new Date();
-		var currentYear = date.getFullYear(); 
+// // Basic 4
+// 		function radianCalculator(degree) {
+// 			radian = degree * (Math.PI/180);
+// 			return radian;
+// 		}
+
+// 		var degree = 30;
+// 		var radian = radianCalculator(degree);
 		
+// 		console.log(radianCalculator(degree));
+// 		document.write(degree + " degrees is " + radian + " radians." )
 
-		function ageCalculator(birthYear) {
-			age = currentYear - birthYear;
-			return age;
-		}
-		ageCalculator(1986);
-		var ageAlternative = age--;
-		document.write("You are either " + age + " or " + ageAlternative + " years old.");
+// document.write( "<br/>");
+// document.write( "<br/>");
+// //Basic 5
 
-document.write( "<br/>");
-document.write( "<br/>");
-// Basic 4
-		function radianCalculator(degree) {
-			radian = degree * (Math.PI/180);
-			return radian;
-		}
-
-		var degree = 30;
-		var radian = radianCalculator(degree);
+// 	function Area_Volume(width, height, depth) //declara a function with three parameters
+// 	{
+// 		var area = width * height; //calculate the area
+// 		var volume = area * depth; //calculate the volume
 		
-		console.log(radianCalculator(degree));
-		document.write(degree + " degrees is " + radian + " radians." )
+// 		var result = [area, volume]; //store the result as array in a variable result
+// 		return result; //return the result to allow the values to be used
+// 	}
 
-document.write( "<br/>");
-document.write( "<br/>");
-//Basic 5
+// 	document.write("The area of the box is: " + Area_Volume(7, 2, 5)[0]);
+// 	document.write("<br/>");
+// 	document.write("The volume of the box is: " + Area_Volume(7, 2, 5)[1]);
 
-	function Area_Volume(width, height, depth) //declara a function with three parameters
-	{
-		var area = width * height; //calculate the area
-		var volume = area * depth; //calculate the volume
-		
-		var result = [area, volume]; //store the result as array in a variable result
-		return result; //return the result to allow the values to be used
-	}
+//Intermediate
 
-	document.write("The area of the box is: " + Area_Volume(7, 2, 5)[0]);
-	document.write("<br/>");
-	document.write("The volume of the box is: " + Area_Volume(7, 2, 5)[1]);
+var capitalizeFirstLetter = (function() {  
+   string = "i am a web developer";
+   return string.charAt(0).toUpperCase() + string.slice(1); //charAt(0) method returns the first character of a string and .toUpperCase() makes an Upper Case.
+}());
 
-//Basic 6
+console.log(capitalizeFirstLetter);
 
 	</script>
 
