@@ -17,15 +17,29 @@
 
 //Basic 2
 
-		function ageCalculator(birthYear, currentYear) {
-			age = currentYear - birthYear; //define a global variable
-			return age; //save the result
+		// function ageCalculator(birthYear, currentYear) {
+		// 	age = currentYear - birthYear; //define a global variable
+		// 	return age; //save the result
+		// }
+		
+		// ageCalculator(1986, 2019); //call the function
+		// var ageAlternative = age--; //calculate alternative age and save it in a variable 
+		
+		// document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+//Basic 3
+		var date = new Date();
+		var currentYear = date.getFullYear(); 
+		
+
+		function ageCalculator(birthYear) {
+			age = currentYear - birthYear;
+			return age;
 		}
-		
-		ageCalculator(1986, 2019); //call the function
-		var ageAlternative = age--; //calculate alternative age and save it in a variable 
-		
-		document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+		ageCalculator(1986);
+		var ageAlternative = age--;
+		document.write("You are either " + age + " or " + ageAlternative + " years old.");
+
+
 
 	</script>
 
