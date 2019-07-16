@@ -5,7 +5,26 @@
 </head>
 <body>
 
+	<input type="number" id="Math"/>
+	<input type="number" id="Physics"/>
+	<input type="number" id="English"/>
+
+	<input type ="button" onclick="average()" value="average">
+	<input type="number" id ="avg">
+
 	<script>
+	
+	 function average(a, b, c){
+        var sum=parseInt(document.getElementById("Math").value);
+        var b=parseInt(document.getElementById("Physics").value);
+        var b=parseInt(document.getElementById("English").value);
+        var afinal=((a+b)/2);
+            document.getElementById('avg').value=afinal;
+        }
+
+
+
+
 // //=======================		
 // //Basic1
 // //=======================
@@ -102,6 +121,7 @@
 // //=======================
 //Intermediate 2
 // //=======================
+
 
 
 
