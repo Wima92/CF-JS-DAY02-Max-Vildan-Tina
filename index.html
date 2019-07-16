@@ -6,10 +6,27 @@
 <body>
 
 	<script>
-		function crystalGazer(noChild, partner, location, job) {
-			document.write("You will be a " + job + " in " + location + " and married to " + partner + " with " + noChild + " children.");
+// //Basic1
+// 		function crystalGazer(noChild, partner, location, job) {
+// 			document.write("You will be a " + job + " in " + location + " and married to " + partner + " with " + noChild + " children.");
+// 		}
+// 		crystalGazer(3, "Martin", "Vienna", "programmer");
+
+// document.write( "<br/>");
+// document.write( "<br/>");
+
+//Basic 2
+
+		function ageCalculator(birthYear, currentYear) {
+			age = currentYear - birthYear; //define a global variable
+			return age; //save the result
 		}
-		crystalGazer(3, "Martin", "Vienna", "programmer");
+		
+		ageCalculator(1986, 2019); //call the function
+		var ageAlternative = age--; //calculate alternative age and save it in a variable 
+		
+		document.write("You are either " + age + " or " + ageAlternative + " years old."); //show the result in the browser
+
 	</script>
 
 </body>
