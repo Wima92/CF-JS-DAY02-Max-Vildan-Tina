@@ -55,6 +55,23 @@ document.write( "<br/>");
 		console.log(radianCalculator(degree));
 		document.write(degree + " degrees is " + radian + " radians." )
 
+document.write( "<br/>");
+document.write( "<br/>");
+//Basic 5
+
+	function Area_Volume(width, height, depth) //declara a function with three parameters
+	{
+		var area = width * height; //calculate the area
+		var volume = area * depth; //calculate the volume
+		
+		var result = [area, volume]; //store the result as array in a variable result
+		return result; //return the result to allow the values to be used
+	}
+
+	document.write("The area of the box is: " + Area_Volume(7, 2, 5)[0]);
+	document.write("<br/>");
+	document.write("The volume of the box is: " + Area_Volume(7, 2, 5)[1]);
+
 	</script>
 
 </body>
