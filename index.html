@@ -109,6 +109,8 @@
 // //Intermediate 1
 // //=======================
 
+// //anonymous JavaScript function
+
 // var capitalizeFirstLetter = (function() {  
 //    string = "i am a web developer";
 //    return string.charAt(0).toUpperCase() + string.slice(1); //charAt(0) method returns the first character of a string and .toUpperCase() makes an Upper Case.
@@ -119,6 +121,25 @@
 // //=======================
 // //Intermediate 2
 // //=======================
+
+
+	// Option one with promppt from Valeria/Christoph and if else from Anja/Sarah
+
+		var math = Number(prompt("Please input your math grade", "input a number from 1 to 5"));
+		var physics = Number(prompt("Please input your physics grade", "input a number from 1 to 5"));
+		var english = Number(prompt("Please input your english grade", "input a number from 1 to 5"));
+	
+	function average(){
+		
+		if (isNaN(math) || isNaN(physics) || isNaN(english)) {
+			
+			alert("One of the entered values was not a number");
+			
+		} else {
+			return "The sum is: " + (math + physics + english) + "<br>" + "The average is: " + ((math + physics + english)/3);
+		}
+	}
+	document.write(average());
 
 	</script>
 
