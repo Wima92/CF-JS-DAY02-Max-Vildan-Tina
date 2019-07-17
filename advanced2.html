@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced 2</title>
+</head>
+<body>
+<h1>2 Advanced | Yesterday's date</h1>
+<!-- Write an anonymous JavaScript function to calculate yesterday's date. When the function is called we can pass one string as an argument (in the date form). We should get yesterday's date as the output .
+E.g. If we pass as an argument the following string 'Feb 23, 2017'  the program should output 'Wed Feb 22 2017' -->
+
+<script>
+
+var yesterday = (function(aDate) { //create a function without a name with a parameter aDate where a date written as a string (see below) will be passed.
+	var result = new Date(aDate); //create a DATE OBJECT with an parameter aDate and store it in a variable result.
+	console.log(result); //so this will log the passed argument
+	
+	result.setDate(result.getDate()-1); //getDate() returns (looks up) the day of the month and reduces it by 1 and then the setDate() sets the result to be the new date (reduced by one day).
+	console.log(result); //so this will log the new date reduced by one day
+
+	document.write(result.toDateString()); //.toDateString() writes the result as a human readable string. If you dont put it it will jut write out like in the consol: Tue Feb 21 2017 00:00:00 GMT+0100 (Central European Standard Time)
+
+	return result; //the returned result will be stored in the var yesterday. Actually no need to return the result if u just wanna see it on the page, cause we have document.write() in the function, but you have to do it if you wanna use the value later.
+
+})("Feb 22, 2017"); //here we pass the argument/the date as a string. You have to put it in quotes, but you can put it in several different ways, e.g. "2-23-2017" or "February 22, 2017", "2/22/2017", etc...
+
+document.write("<br>" + yesterday.toDateString()); //here we see that we can also write out the result by passing the var yesterday as an argument. Again we attach .toDateString() in order to get the short version. 
+
+
+</script>
+
+</body>
+</html>
